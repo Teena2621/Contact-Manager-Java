@@ -1,5 +1,3 @@
-// ContactManager.java
-
 import java.io.*;
 import java.util.*;
 
@@ -21,7 +19,7 @@ public class ContactManager {
             System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
-            sc.nextLine(); // clear newline
+            sc.nextLine(); 
 
             switch (choice) {
                 case 1 -> addContact(sc);
@@ -108,7 +106,7 @@ public class ContactManager {
                 }
             }
         } catch (IOException e) {
-            // file might not exist yet
+            
         }
     }
 }
